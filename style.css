@@ -1,0 +1,934 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.part1{
+    height: 100%;
+    width: 100%;
+    background-color: #dadada;
+    
+
+}
+nav{
+    height: 19vh;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.4em;
+}
+nav >ul{
+    position: relative;
+    display: flex;
+    gap: 4vmax;
+    
+}
+nav >ul >a{
+    font-size: 0.9em;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    cursor: pointer;
+    transition: all 1s;
+}
+nav >ul >a:hover{
+    color: rgb(172, 36, 36);
+    font-size: 1em;
+    font-weight: 600;
+
+}
+nav >.logo{
+    height: 4.9vh;
+    width: 2.5vw;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    left: 2.3em;
+    align-items: center;
+    /* left: 2.5vmax; */
+}
+.round{
+    height: 2vh;
+    width: 0.9vw;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    top: 0.5em;
+    left: 0.3em;
+    border: 0.2em solid white;
+    
+}
+.logo >i{
+    position: relative;
+    text-align: center;
+    font-size: 0.8vmax;
+    bottom: 0.7em;
+    left: 1.9em;
+    font-weight: 900;
+    color: white;
+}
+nav >h1{
+    font-size: 1.9em;
+    font-family: sans-serif;
+    font-weight: 900;
+    position: relative;
+    left: 0.6em;
+    letter-spacing: -0.1em;
+    bottom: 0.1em;
+}
+.six{
+    height: 3.1vh;
+    width: 1.4vw;
+    background-color: crimson;
+    border-radius: 50%;
+    position: relative;
+    bottom: 0.8em;
+    right: 0.3em;
+}
+.six >h2{
+    position: relative;
+    font-size:1em;
+    text-align: center;
+    font-weight: 900;
+    right: 0.3px;
+    color: white;
+    
+}
+nav > a >h3{
+    position: relative;
+    margin-left: 27em;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    font-weight: 550;
+    color: rgb(53, 44, 44);
+    cursor: pointer;
+    transition: all 1s;
+    
+}
+nav > a >h3:hover{
+    color: rgb(172,36,36);
+}
+nav >button{
+    padding: 0.8vmax 1.4vmax;
+    border-radius: 1vmax 1vmax;
+    font-size: 1em;
+    font-family: sans-serif;
+    background-color: rgba(0, 128, 255, 0.916);
+    border: 1px solid transparent;
+    color: whitesmoke;
+    position: relative;
+    cursor: pointer;
+    transition: all 1s;
+}
+nav >button:hover{
+    background-color: seagreen;
+    font-size: 1.2em;
+}
+/* @media only screen and (max-width:600px) {
+    nav{
+        text-align: center;
+        align-items: center;
+        display: block;
+        background-color: yellow;
+        width: 45vw;
+        height: 30vh;
+    }
+} */
+
+.heading{
+    height: 35vh;
+    width: 45vw;
+    background-color: transparent;
+    position: relative;
+    left: 20em;
+    top: 6em;
+}
+.heading >h1{
+    font-size: 3em;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+}
+.heading >p{
+    font-size: 1.2em;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 200;
+    position: relative;
+    top: 1.2em;
+    line-height: 1.5em;
+    color: rgba(0, 0, 0, 0.703);
+    
+}
+.btn_duble{
+    height: 11vh;
+    width: 20vw;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    top: 7em;
+    left: 29em;
+    gap: 1.2em;
+    align-items: center;
+}
+.btn1 > a >button{
+    font-size: 0.8em;
+    font-family: sans-serif;
+    font-weight: 540;
+    border: 1px solid transparent;
+    padding: 1em 1.9em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background-color: rgba(0, 128, 255, 0.916);
+    color: white;
+    transition: all 1s;
+}
+.btn1 > a >button:hover{
+    background-color: seagreen;
+    font-size: 0.9em;
+}
+.btn2 > a >button{
+    font-size: 0.8em;
+    font-family: sans-serif;
+    font-weight: 540;
+    padding: 0.9em 1.4em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background-color: #dadada;
+    border: 1px solid rgb(116, 104, 104);
+    color: black;
+    transition: all 1s;
+}
+.btn2 > a >button:hover{
+    font-size: 0.9em;
+    background-color: seagreen;
+}
+.part2{
+    height: 100%;
+    width: 100%;
+    background-color: #dadada;
+}
+.main{
+    height: 8vh;
+    width: 82vw;
+    background-color: transparent;
+    position: relative;
+    left: 6em;
+    display: flex;
+    transform: rotateX(30deg);
+}
+.s{
+    height: 8vh;
+    width: 4.5vw;
+    background-color: black;
+    border-top-left-radius: 0.6em;
+}
+.s >h1{
+    font-size: 1.6em;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}
+.template{
+    height: 8vh;
+    width: 23vw;
+    background-color: rgb(24, 22, 22);
+}
+.template >h2{
+    font-size: 0.9em;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 600;
+    position: relative;
+    top: 0.9em;
+    left: 1.5em;
+    
+}
+.template >button{
+    font-size: 0.9em;
+   position: relative;
+   padding: 0.4em 1em;
+   bottom: 0.7em;
+   left: 13.7em;
+   font-weight: 600;
+   color: white;
+   background-color: transparent;
+   border: 1px solid rgb(116, 104, 104);
+   border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+.template >button >i{
+    position: relative;
+    left: 0.1em;
+    font-size: 0.9em;
+}
+.design{
+    height: 8vh;
+    width: 55vw;
+    background-color: rgba(0, 0, 0, 0.797);
+    border-top-right-radius: 0.6em;
+
+}
+.design >h1{
+    font-size: 0.9em;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 600;
+    position: relative;
+    top: 0.9em;
+    left: 1.5em;
+}
+.design >h1 >i{
+    font-size: 0.8em;
+    position: relative;
+    left: 0.6em;
+}
+.design >h3{
+    font-size: 0.9em;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 600;
+    position: relative;
+    bottom: 0.3em;
+    margin-left: 9.2em;
+}
+.emoji{
+    height: 8vh;
+    width: 15vw;
+    background-color: transparent;
+    position: relative;
+    bottom: 2.2em;
+    margin-left: 32em;
+    display: flex;
+    align-items: center;
+}
+.plus{
+    height: 6vh;
+    width: 3vw;
+    background-color: black;
+    border-radius: 50%;
+    border: 0.1em solid rgb(116, 104, 104);
+}
+.plus >i{
+    color: white;
+    position: relative;
+    top: 0.2em;
+    left: 0.3em;
+    font-size: 1.4em;
+    font-weight: 100;
+    color: rgb(116, 104, 104);
+}
+.emoji2{
+    height: 6vh;
+    width: 3vw;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    left: 0.4em;
+    align-items: center;
+}
+.round2{
+    height: 2vh;
+    width: 0.9vw;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    top: 0.5em;
+    left: 0.3em;
+    border: 0.2em solid black;
+    
+}
+.emoji2 >i{
+    position: relative;
+    text-align: center;
+    font-size: 0.8vmax;
+    bottom: 0.7em;
+    left: 1.9em;
+    font-weight: 900;
+    color: black;
+}
+.icon >i{
+    position: relative;
+    bottom: 1em;
+    left: 1em;
+    color: black;
+    font-size: 0.8em;
+}
+.emoji >button{
+    padding: 0.7em 2.3em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border: 1px solid transparent;
+    background-color: rgba(0, 128, 255, 0.916);
+    position: relative;
+    left: 0.9em;
+}
+.emoji >button >i{
+    position: relative;
+    right: 1.4em;
+    color: white;
+    font-size: 1.1em;
+}
+.arrow_down >i{
+    position: relative;
+    right: 1.8em;
+    font-size: 0.8em;
+    color: white;
+}
+.main2{
+    height: 105vh;
+    width: 82vw;
+    background-color: white;
+    position: relative;
+    left: 6em;
+    transform: rotateX(30deg);
+    bottom: 2.7em;
+    display: flex;
+}
+.all_icon{
+    height: 105vh;
+    width: 4.5vw;
+    background-color: #dadada76;
+    display: flex;
+    flex-direction: column;
+    gap: 3vmax;
+}
+.all_icon >i{
+    position: relative;
+    font-size: 1.7em;
+    top: 0.6em;
+    left: 0.5em;
+}
+.slides2{
+    height: 105vh;
+    width: 19vw;
+    background-color: transparent;
+    border-right: 1px solid #dadada;
+}
+.back{
+    height: 29vh;
+    width: 16.2vw;
+    background-color: transparent;
+    position: relative;
+    left: 1.5em;
+    top: 1.5em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+.back >img{
+    height: 29vh;
+    width: 16.2vw;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+.back >h1{
+    position: relative;
+    bottom: 2em;
+    font-size: 1.7em;
+    color: white;
+    font-weight: 900;
+    /* left: 0.9em; */
+    text-align: center;
+    font-family: sans-serif;
+}
+.pera{
+    height: 29vh;
+    width: 16.2vw;
+    left: 1.5em;
+    background-color: transparent;
+    position: relative;
+    top: 3em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+.pera >h1{
+    font-size: 1.4em;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.pera >p{
+    font-size: 0.9em;
+    font-family: sans-serif;
+    font-weight: 400;
+    position: relative;
+    top: 0.8em;
+    color: rgb(0, 0, 0);
+}
+.more{
+    height: 8vh;
+    width: 55vw;
+    background-color: transparent;
+    position: relative;
+    left: 1.5em;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+.more1 >h1{
+    font-size: 1.2em;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: rgb(78, 70, 70);
+    position: relative;
+    /* top: 0.5em; */
+}
+.more1 >h1 >i{
+    font-size: 0.7em;
+    position: relative;
+    left: 0.3em;
+    bottom: 0.2em;
+}
+.squre{
+    height: 3.5vh;
+    width: 2vw;
+    background-color: #dadada;
+    position: relative;
+    left: 1.9em;
+    border-top-right-radius: 0.2em;
+    border-top-left-radius: 0.2em;
+    border-bottom-left-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
+}
+.more >i{
+    margin-left: 2.5em;
+    font-size: 1.2em;
+    color: rgba(0, 128, 255, 0.916);
+}
+.more >h2{
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: 550;
+    color: rgb(78, 70, 70);
+    margin-left: 15em;
+}
+.more >h2 >i{
+    color: rgba(0, 128, 255, 0.916);
+}
+.x >i{
+    margin-left: 3.5em;
+    font-size: 1.4em;
+    color: rgb(116, 99, 99);
+
+}
+.card{
+    height: 78vh;
+    width: 56.5vw;
+    background-color: white;
+    position: relative;
+    bottom: 32em;
+    left: 26.4em;
+}
+.card >video{
+    object-fit: cover;
+    border: 1px solid transparent;
+}
+.part3{
+    height: 120%;
+    width: 100%;
+    background-color: #dadada;
+}
+.beg{
+    height: 105vh;
+    width: 82vw;
+    background-color: white;
+    position: relative;
+    left: 6em;
+    top: 0.7em;
+    border-top-right-radius: 0.7em;
+    border-top-left-radius: 0.7em;
+    border-bottom-left-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
+}
+.beg1{
+    height: 89vh;
+    width: 69vw;
+    background-color: white;
+    position: relative;
+    left: 9em;
+}
+.dami_card{
+    height: 40vh;
+    width: 33vw;
+    background-color: transparent;
+    display: flex;
+    
+}
+.dami_chlid{
+    height: 32vh;
+    width: 18vw;
+    background-color: rgb(32, 30, 30);
+    position: relative;
+    top: 2em;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+    
+}
+.member{
+    height: 5vh;
+    width: 13vw;
+    background-color: transparent;
+    position: relative;
+    left: 1.5em;
+}
+.member >h1{
+    font-size: 0.7em;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: chartreuse;
+    position: relative;
+    top: 0.9em;
+}
+.member >i{
+    position: relative;
+    bottom: 0.6em;
+    left: 13.5em;
+    font-size: 0.7em;
+    color: white;
+}
+.dinkar{
+    height: 20vh;
+    width: 14vw;
+    background-color: transparent;
+    position: relative;
+    left: 1.5em;
+    top: 0.9em;
+}
+.dinkar >h1{
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: white;
+}
+.dinkar >p{
+    font-size: 0.7em;
+    position: relative;
+    top: 0.6em;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: white;
+}
+
+.dami1_chlid{
+    height: 37.8vh;
+    width: 18vw;
+    background-color: transparent;
+}
+.dami1_chlid >img{
+    height: 37.8vh;
+    width: 18vw;
+}
+.capture{
+    height: 42vh;
+    width: 30.3vw;
+    background-color: transparent;
+    position: relative;
+    left: 31em;
+    top: 0.8em;
+}
+.capture >h1{
+    font-size: 2.4em;
+    /* text-align: center; */
+    font-family: sans-serif;
+}
+.capture >p{
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.3em;
+    position: relative;
+    top: 1em;
+    color: rgb(30, 25, 25);
+}
+.unforget{
+    height: 40vh;
+    width: 36vw;
+    background-color: transparent;
+    position: relative;
+    bottom: 13em;
+    display: flex;
+    border-top-right-radius: 0.7em;
+    border-top-left-radius: 0.7em;
+    border-bottom-left-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
+    
+
+}
+.unforget2{
+    height: 40vh;
+    width: 18vw;
+    background-color: transparent;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+}
+.inner{
+    height: 33vh;
+    width: 15vw;
+    background-color: transparent;
+    position: relative;
+    left: 1.3em;
+    top: 1.3em;
+}
+.inner >h1{
+    font-size: 1.5em;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 780;
+}
+.inner >p{
+    font-size: 0.7em;
+    text-align: center;
+    font-weight: 600;
+    font-family: sans-serif;
+    position: relative;
+    top: 0.9em;
+    color: rgb(30, 25, 25);
+}
+.btn_main{
+    height: 8vh;
+    width: 13.4vw;
+    background-color: transparent;
+    position: relative;
+    top: 1.9em;
+    left: 0.6em;
+    display: flex;
+    gap: 1.2em;
+}
+.btn_main >button{
+    padding: 0.2em 0.6em;
+    font-size: 0.7em;
+    font-weight: 600;
+    border-radius: 0.5em 0.8em;
+    border: 1px solid transparent;
+    background-color: rgba(0, 128, 255, 0.916);
+    color: rgb(255, 255, 255);
+}
+
+.unforget3{
+    height: 40vh;
+    width: 18vw;
+    background-color: transparent;
+}
+.unforget3 >img{
+    height: 40vh;
+    width: 18vw;
+    border-top-right-radius: 0.7em;
+    border-top-left-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
+}
+.paswan{
+    height: 8vh;
+    width: 82vw;
+    background-color: #dadada;
+    position: relative;
+    top: 1.7em;
+    left: 6em;
+    
+}
+.paswan >marquee >h1{
+    color: rgb(72, 61, 41);
+    font-family: sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    background-image: url(https://www.icegif.com/wp-content/uploads/cool-wallpapers-icegif-2.gif);
+    -webkit-background-clip: text;
+}
+.part4{
+    height: 100%;
+    width: 100%;
+    background-color: #dadada;
+}
+.fast{
+    height: 95vh;
+    width: 82vw;
+    background-color: rgb(104, 67, 179);
+    /* background-color: rgb(88, 53, 144); */
+    position: relative;
+    left: 6em;
+    border-top-right-radius: 0.7em;
+    border-top-left-radius: 0.7em;
+    border-bottom-left-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
+    display: flex;
+}
+.fast1{
+    height: 76vh;
+    width: 41vw;
+    background-color: transparent;
+    border-top-left-radius: 0.7em;
+    border-bottom-left-radius: 0.7em;
+    position: relative;
+    top: 2em;
+}
+.beautiful{
+    height: 30vh;
+    width: 30.5vw;
+    background-color: transparent;
+    position: relative;
+    left: 3em;
+    top: 1.7em;
+}
+.beautiful >button{
+    padding: 0.5em 0.9em;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: white;
+    background-color: mediumpurple;
+    border-top-right-radius: 0.3em;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    border: 1px solid transparent;
+}
+.beautiful >button:hover{
+    background-color: violet;
+}
+.beautiful >h1{
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-top: 0.3em;
+    color: white;
+}
+.beautiful >p{
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: 550;
+    line-height: 1.2em;
+    margin-top: 0.5em;
+    color: white;
+}
+.apps_btn{
+    height: 20vh;
+    width: 32vw;
+    background-color: transparent;
+    position: relative;
+    left: 3em;
+    top: 3.6em;  
+}
+.apps_btn >button{
+    padding: 0.6em 0.9em;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: white;
+    margin-left: 0.6em;
+    background-color: mediumpurple;
+    border-top-right-radius: 0.3em;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    border: 1px solid transparent;
+}
+.apps_btn >button:hover{
+    background-color: seagreen;
+}
+.apps_btn > span> button{
+    padding: 0.6em 0.9em;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: rgb(45, 38, 38);
+    background-color: white;
+    border-top-right-radius: 0.3em;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    border: 1px solid transparent;
+}
+.apps_btn > span> button:hover{
+    background-color: orange;
+}
+.apps_btn >.more_btn >button{
+    padding: 0.6em 0.9em;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: white;
+    margin-top: 0.6em;
+    margin-left: 0.6em;
+    position: relative;
+    right: 0.6em;
+    background-color: mediumpurple;
+    border-top-right-radius: 0.3em;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    border: 1px solid transparent;
+}
+.apps_btn >.more_btn >button:hover{
+    background-color: orange;
+}
+
+
+.fast2{
+    height: 86vh;
+    width: 41vw;
+    
+    background-color: white;
+    border-top-left-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
+    position: relative;
+    top: 3.1em;
+    
+}
+.fast2 >img{
+    height: 43vh;
+    width: 20vw;
+}
+.fast2 >img:nth-child(2){
+    height: 43vh;
+    width: 15vw;
+    margin-left: 2em;
+    margin-top: 3em;
+    border-top-right-radius: 0.3em;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+}
+.fast2 >img:nth-child(1){
+   margin-bottom: 3em;
+   border-top-left-radius: 0.7em;
+   border-bottom-right-radius: 0.3em;
+}
+.fast2 >img:nth-child(3){
+    position: relative;
+    bottom: 4em;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 13%;
+    border-bottom-right-radius: 13%;
+ }
+ .fast2 >h1{
+    position: relative;
+    font-size: 1.6em;
+    font-family: sans-serif;
+ }
